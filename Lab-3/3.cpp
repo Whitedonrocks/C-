@@ -29,7 +29,7 @@ class Student{
 };
 int main(){
  Student s1,s2;
- s1.setData("Ram",12,20,21,22);
+ s1.setData("Ram",12,22);
 
 
 
