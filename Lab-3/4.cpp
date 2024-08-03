@@ -12,7 +12,7 @@ class Person{
     int age;
     public:
     Person(){
-        name='0';
+        name="unknown";
         age=0;
     }
     void setData(string n,int a){
@@ -25,8 +25,10 @@ class Person{
 };
 int main(){
 Person person1;
-person1.setData("Bikash",19);
 person1.displayData();
+Person person2;
+person2.setData("Bikash",19);
+person2.displayData();
 
 
 

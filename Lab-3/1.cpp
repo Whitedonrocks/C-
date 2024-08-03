@@ -20,28 +20,27 @@ class Employee{
 
     void getData(){
         
-        cout<<name<<"\t"<<id<<"\t"<<salary<<endl;
+        cout<<"Name : "<<name<<"\t"<<"Id :"<<id<<"\t"<<"Salary :"<<salary<<endl;
     }
 
 };
 int main(){
     
-    Employee obj1;
+    Employee obj1[3];
     int i;
-    string name[3];
-    int id[3];
-    double salary[3];
+    string name;
+    int id;
+    double salary;
     cout<<"Enter the name , id and salary of 3 employee:"<<endl;
    
     for(i=0;i<3;i++){
-        cin>>name[i]>>id[i]>>salary[i];
-        cout<<endl<<endl;
+        cin>>name>>id>>salary;
+        obj1[i].setData(name,id,salary);
         }
-    cout<<"Name:"<<"\t"<<"Id:"<<"\t"<<"Salary:"<<endl;
     for ( i = 0; i < 3; i++)
     {
-        obj1.setData(name[i],id[i],salary[i]);
-        obj1.getData();
+       
+        obj1[i].getData();
 
     }
     
